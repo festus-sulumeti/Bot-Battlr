@@ -50,8 +50,11 @@ return (
           onAddToArmy = {(bot) => setBotArmy([...botArmy, bot])}
         />
       )}
+      
+      <YourBotArmy botArmy={botArmy} setBotArmy={setBotArmy} />
     </div>
-)
-
+);
 
 }
+
+export default BotsPage;

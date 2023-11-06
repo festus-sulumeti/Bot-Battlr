@@ -1,54 +1,73 @@
-/* 60% - Main content container */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300;1,400&display=swap');
+
+/* Reset some default styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+    color: #333; /* Text color for readability */
+}
+
+/* Apply a background color to the entire page */
+body {
+    background-color: #f7f7f7;
+}
+
+/* General styling for the entire page */
 .App {
-  background-color: #f2f2f2;
+  background-color: #f7f7f7;
   padding: 2rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  justify-items: center;
   text-align: center;
 }
 
-/* 30% - Section headers */
+/* Section headers */
 h1, h2 {
   color: #333;
+  font-size: 24px;
+  margin-bottom: 20px;
 }
 
-/* 10% - Buttons */
+/* Buttons */
 button {
-  background-color: #e74c3c;
+  background-color: #007BFF;
   color: #fff;
   border: none;
-  padding: 5px 10px;
+  padding: 10px 20px;
   border-radius: 4px;
   cursor: pointer;
+  margin: 10px;
 }
 
 button:hover {
-  background-color: #c0392b;
+  background-color: #0056b3;
 }
 
-/* Bot collection and your bot army containers */
+/* Styling for bot collection and your bot army containers */
 .bot-collection, .your-bot-army {
   background-color: #fff;
-  border: 2px solid #ddd;
+  border: 1px solid #ccc;
   border-radius: 8px;
-  margin: 1rem;
   padding: 1rem;
-  width: 60%;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px;
 }
 
-/* Bot card */
+/* Styling for individual bot cards */
 li {
   display: flex;
-  flex-direction: row;
+  flex-direction: row; /* Display images and content side by side */
   align-items: center;
   justify-content: space-between;
-  border: 1px solid #eee;
-  border-radius: 4px;
-  margin: 1rem 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
   padding: 1rem;
   background-color: #fff;
+  margin: 20px;
 }
 
 li img {
@@ -56,22 +75,22 @@ li img {
   height: 100px;
   border-radius: 50%;
   object-fit: cover;
-  margin-right: 1rem;
+  margin-right: 20px; /* Add margin between the image and content */
 }
 
-/* Class-specific styles */
+/* Class-specific styles for bots */
 .bot-class-Support {
   background-color: #3498db;
   color: #fff;
-  padding: 0.25rem 0.5rem;
-  border-radius: 2px;
+  padding: 5px 10px;
+  border-radius: 4px;
+  margin: 10px;
 }
 
 .bot-class-Medic {
   background-color: #27ae60;
   color: #fff;
-  padding: 0.25rem 0.5rem;
-  border-radius: 2px;
+  padding: 5px 10px;
+  border-radius: 4px;
+  margin: 10px;
 }
-
-

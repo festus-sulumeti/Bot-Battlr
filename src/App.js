@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import BotCollection from './BotCollection';
-import YourBotArmy from './YourBotArmy';
+import BotCollection from './Components/BotCollection';
+import YourBotArmy from './Components/YourBotArmy';
 import './App.css';
 
 class App extends Component {
